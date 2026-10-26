@@ -3,6 +3,7 @@ package validation
 import (
 	"time"
 
+	ssvtypes "github.com/ssvlabs/ssv/protocol/v2/types"
 	"github.com/ssvlabs/ssv/protocol/v2/types/gloas"
 )
 
@@ -22,7 +23,7 @@ const (
 	validatorIndexSize      = 8 // uint64
 	identifierSize          = 56
 	rootSize                = 32
-	maxSignatures           = 13
+	maxSignatures           = ssvtypes.MaxCommitteeSize
 	encodingOverheadDivisor = 20 // Divisor for message size to get encoding overhead, e.g. 10 for 10%, 20 for 5%. Done this way to keep const int.
 )
 
