@@ -1,4 +1,4 @@
-ARG GO_VERSION=1.26
+ARG GO_VERSION=1.26@sha256:36775b15988ba37410576be98e8628fc1bf25a09c3d9afc7f5e3c3d328a063ae
 
 #
 # STEP 1: Base image with common dependencies
